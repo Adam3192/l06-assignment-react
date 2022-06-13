@@ -1,0 +1,31 @@
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
+import Stack from 'react-bootstrap/Stack'
+import { Link, Outlet, NavLink } from 'react-router-dom'
+
+function Home() {
+  return (
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Nav className="me-auto">
+            <NavLink to="/" className="nav-link">
+              Home
+            </NavLink>
+            <NavLink to="/jobs" className="nav-link">
+              Jobs
+            </NavLink>
+            <NavLink to="/about" className="nav-link">
+              About Us
+            </NavLink>
+          </Nav>
+        </Container>
+      </Navbar>
+      <Outlet></Outlet>
+    </>
+  )
+}
+
+export default Home
+
