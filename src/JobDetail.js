@@ -20,6 +20,8 @@ function JobDetail(props) {
         <Card.Subtitle className="mb-2 text-muted">{company}</Card.Subtitle>
         <Card.Text>
           <strong>Description:</strong> <span>{description}</span>
+        </Card.Text>
+        <Card.Text>
           <strong>Years:</strong> <span>{duration}</span>
         </Card.Text>
       </Card.Body>

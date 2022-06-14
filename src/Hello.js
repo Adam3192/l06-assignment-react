@@ -3,15 +3,13 @@ import './Hello.css'
 
 function Hello() {
  return (
-   <>
-      <Stack direction="horizontal" gap={3} className="col-md-10 mx-auto">
-      <div>
-        <h1 className="test">Adam Dixon</h1>
-        <p>Welcome to my Job Portfolio</p>
+      <div className="container">
+        <div>
+          <h1>Adam Dixon</h1>
+          <p>Welcome to my Job Portfolio</p>
+        </div>
+        <img width = "355" height = "355" src = {require("./Images/Selfie.png")} alt = ""></img>
       </div>
-        <img width = "455" height = "455" src = {require("./Images/Selfie.png")} alt = ""></img>
-      </Stack>
-   </>
  )
 }
 
